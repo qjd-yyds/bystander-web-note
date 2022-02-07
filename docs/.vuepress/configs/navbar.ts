@@ -10,15 +10,15 @@ export const navbar: NavbarConfig = [
     children: [
       {
         text: 'css',
-        link: '/web/css/index.md'
+        link: '/web/css/bfc.md'
       },
       {
         text: 'html',
-        link: '/web/html/index.md'
+        link: '/web/html/rich'
       },
       {
         text: 'javascript',
-        link: '/web/javascript/index.md'
+        link: '/web/javascript/socpe.md'
       }
     ]
   },
