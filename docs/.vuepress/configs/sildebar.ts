@@ -23,7 +23,7 @@ export const slidebar: SidebarConfig = {
       children: ['/web/html/rich']
     }
   ],
-  '/web/javascript/': [
+  '/web/javascript': [
     {
       text: '理论相关',
       collapsible: true,
@@ -39,6 +39,15 @@ export const slidebar: SidebarConfig = {
         '/web/javascript/written/closure.md',
         '/web/javascript/written/object.md',
         '/web/javascript/written/more.md'
+      ]
+    }
+  ],
+  '/algorithm': [
+    {
+      text: '数据结构和算法',
+      children: [
+        '/algorithm/readme.md',
+        '/algorithm/stack.md'
       ]
     }
   ]

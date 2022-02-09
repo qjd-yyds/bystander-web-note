@@ -1,4 +1,4 @@
-import type { NavbarConfig } from '@vuepress/theme-default';
+import type { NavbarConfig } from '@vuepress/theme-default'
 
 export const navbar: NavbarConfig = [
   {
@@ -23,6 +23,19 @@ export const navbar: NavbarConfig = [
     ]
   },
   {
+    text: '数据结构和算法',
+    children: [
+      {
+        text: '什么是数据结构和算法',
+        link: '/algorithm/readme.md'
+      },
+      {
+        text: '栈',
+        link: '/algorithm/stack.md'
+      }
+    ]
+  },
+  {
     text: 'linux入门',
     children: [
       {
@@ -31,4 +44,4 @@ export const navbar: NavbarConfig = [
       }
     ]
   }
-];
+]

@@ -9,7 +9,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   title: 'bystander的修仙笔记',
   description: 'JavaScript自我修炼',
   head: [['link', { rel: 'icon', href: '/images/icon.png' }]],
-  open: true,
+  // open: true,
   // 主题和它的配置
   theme: '@vuepress/default',
   themeConfig: {
