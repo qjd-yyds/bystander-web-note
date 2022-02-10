@@ -47,7 +47,10 @@ export const slidebar: SidebarConfig = {
       text: '数据结构和算法',
       children: [
         '/algorithm/readme.md',
-        '/algorithm/stack.md'
+        '/algorithm/stack.md',
+        '/algorithm/queue.md',
+        '/algorithm/priority-queue.md',
+        '/algorithm/linked-list.md',
       ]
     }
   ]

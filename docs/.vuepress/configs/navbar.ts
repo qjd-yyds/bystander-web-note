@@ -32,6 +32,18 @@ export const navbar: NavbarConfig = [
       {
         text: '栈',
         link: '/algorithm/stack.md'
+      },
+      {
+        text: '队列',
+        link: '/algorithm/queue.md'
+      },
+      {
+        text: '优先级队列',
+        link: '/algorithm/priority-queue.md'
+      },
+      {
+        text: '链表',
+        link: '/algorithm/linked-list.md'
       }
     ]
   },
