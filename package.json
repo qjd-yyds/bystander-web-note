@@ -6,10 +6,12 @@
   "scripts": {
     "doc:dev": "vuepress dev docs",
     "doc:build": "vuepress build docs",
-    "start": "node server/index.js"
+    "start": "node server/index.js",
+    "dev":"nodemon server/index.js"
   },
   "devDependencies": {
     "@snippetors/vuepress-plugin-code-copy": "^1.1.1",
+    "nodemon": "^2.0.15",
     "vuepress": "^2.0.0-beta.35"
   },
   "dependencies": {

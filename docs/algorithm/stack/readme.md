@@ -9,7 +9,8 @@
 - 向一个栈插入元素称为**压栈，入栈，进栈**
 - 从一个栈删除元素称为**出栈，退栈**
 
-![栈图解](./images/Stack.png)
+![栈图解](./Stack.png)
+
 ## js 中的函数调用栈
 
 - A 调用了 B B 调用了 C C 调用了 D
@@ -32,52 +33,19 @@
 - B. 4=>5=>3=>2=>1=>6
 - C. 3=>4=>6=>5=>2=>1
 - D. 2=>3=>4=>1=>5=>6
+
 ## 栈的常见方法
-+ push(element) 压栈，往栈中添加元素
-+ pop() 弹栈,将栈顶的元素删除，返回改元素
-+ peek() 查看当前栈顶元素
-+ isEmpty() 判断是否空
-+ size() 返回栈大小
-+ toString() 返回栈内容
+
+- push(element) 压栈，往栈中添加元素
+- pop() 弹栈,将栈顶的元素删除，返回改元素
+- peek() 查看当前栈顶元素
+- isEmpty() 判断是否空
+- size() 返回栈大小
+- toString() 返回栈内容
+
 ## 栈结构实现
 
-```js
-function Stack() {
-  // 栈中的属性
-  this.items = []
-}
-// 相关操作
-// 1.元素压栈
-Stack.prototype.push = function (element) {
-  this.items.push(element)
-}
-// 2.弹栈
-Stack.prototype.pop = function () {
-  return this.items.pop()
-}
-// 3.查看栈顶
-Stack.prototype.peek = function () {
-  return this.items[this.items.length - 1]
-}
-// 4.判断是否空
-Stack.prototype.isEmpty = function () {
-  return this.items.length === 0
-}
-// 5.返回栈个数
-Stack.prototype.size = function () {
-  return this.items.length
-}
-// 6.tostring方法
-Stack.prototype.toString = function () {
-  var result = ''
-  for (var i = 0; i < this.items.length; i++) {
-    result += this.items[i]
-  }
-  return result
-}
-
-var s = new Stack()
-```
+@[code](./Stack.js)
 
 ## 十进制转二进制
 
@@ -96,26 +64,4 @@ var s = new Stack()
 
 ### 使用栈封装
 
-```js
-function dec2bin(decNumer) {
-  var stack = new Stack()
-  while (decNumer > 0) {
-    // 获取他的余数，压栈
-    stack.push(decNumer % 2)
-    decNumer = Math.floor(decNumer / 2)
-  }
-  let result = ''
-  // 依次弹栈，获取到值为二进制
-  while (stack.size()) {
-    result += stack.pop()
-  }
-  var prevNum = (4 - (result.length % 4)) % 4
-  var prevString = ''
-  // 前面补0
-  for (var i = 0; i < prevNum; i++) {
-    prevString += '0'
-  }
-
-  return prevString + result
-}
-```
+@[code](./dec2bin.js)

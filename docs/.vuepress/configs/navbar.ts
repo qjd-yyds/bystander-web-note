@@ -6,19 +6,19 @@ export const navbar: NavbarConfig = [
     link: '/guide/'
   },
   {
-    text: '前端',
+    text: '前端三剑客',
     children: [
       {
-        text: 'css',
-        link: '/web/css/bfc.md'
+        text: 'CSS',
+        link: '/css/bfc'
       },
       {
-        text: 'html',
-        link: '/web/html/rich'
+        text: 'HTML5',
+        link: '/html/ajax/'
       },
       {
-        text: 'javascript',
-        link: '/web/javascript/socpe.md'
+        text: 'JavaScript',
+        link: '/javascript/socpe'
       }
     ]
   },
@@ -31,19 +31,36 @@ export const navbar: NavbarConfig = [
       },
       {
         text: '栈',
-        link: '/algorithm/stack.md'
+        link: '/algorithm/stack/readme.md'
       },
       {
         text: '队列',
-        link: '/algorithm/queue.md'
+        link: '/algorithm/queue/readme.md'
       },
       {
         text: '优先级队列',
-        link: '/algorithm/priority-queue.md'
+        link: '/algorithm/priority-queue/readme.md'
       },
       {
         text: '链表',
-        link: '/algorithm/linked-list.md'
+        link: '/algorithm/linked-list/readme.md'
+      },
+      {
+        text: '双向链表',
+        link: '/algorithm/doubly-linked-list/readme.md'
+      },
+      {
+        text: '集合',
+        link: '/algorithm/set/readme.md'
+      }
+    ]
+  },
+  {
+    text: 'vue笔记',
+    children: [
+      {
+        text: '响应式系统搭建',
+        link: '/vue笔记/响应式系统搭建/readme.md'
       }
     ]
   },
