@@ -25,7 +25,8 @@ export const slidebar: SidebarConfig = {
       children: [
         '/javascript/socpe.md',
         '/javascript/closure.md',
-        '/javascript/object.md'
+        '/javascript/object.md',
+        '/javascript/operator.md',
       ]
     },
     {
