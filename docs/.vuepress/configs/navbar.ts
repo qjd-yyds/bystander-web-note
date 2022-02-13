@@ -52,6 +52,14 @@ export const navbar: NavbarConfig = [
       {
         text: '集合',
         link: '/algorithm/set/readme.md'
+      },
+      {
+        text: '字典',
+        link: '/algorithm/dic/readme.md'
+      },
+      {
+        text: '哈希表',
+        link: '/algorithm/hash-table/readme.md'
       }
     ]
   },

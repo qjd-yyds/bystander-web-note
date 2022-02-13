@@ -47,7 +47,9 @@ export const slidebar: SidebarConfig = {
         '/algorithm/priority-queue/readme.md',
         '/algorithm/linked-list/readme.md',
         '/algorithm/doubly-linked-list/readme.md',
-        '/algorithm/set/readme.md'
+        '/algorithm/set/readme.md',
+        '/algorithm/dic/readme.md',
+        '/algorithm/hash-table/readme.md',
       ]
     }
   ]

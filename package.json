@@ -7,7 +7,7 @@
     "doc:dev": "vuepress dev docs",
     "doc:build": "vuepress build docs",
     "start": "node server/index.js",
-    "dev":"nodemon server/index.js"
+    "server:dev":"nodemon server/index.js"
   },
   "devDependencies": {
     "@snippetors/vuepress-plugin-code-copy": "^1.1.1",
