@@ -43,8 +43,13 @@ HashTable.prototype.put = function (key, value) {
   bucket.push([key, value])
   // 计数
   this.count++
+  // 判断是否需要扩容
+  if ((this.count / this.limit) * 0.75) {
+    // 保证是否是质数
+    var limit = this.getPrime(this.limit * 2)
+    this.resize(limit)
+  }
 }
-
 // 获取方法
 HashTable.prototype.get = function (key) {
   // 1.更具key获取index
@@ -81,6 +86,11 @@ HashTable.prototype.remove = function (key) {
     if (tuple[0] == key) {
       bucket.splice(i, 1)
       this.count--
+      // 缩小容量
+      if (this.limit > 7 && this.count < this.limit * 0.25) {
+        var limit = this.getPrime(Math.floor(this.limit / 2))
+        this.resize(limit)
+      }
       return bucket[1]
     }
   }
@@ -94,4 +104,31 @@ HashTable.prototype.isEmpty = function () {
 // 获取hash表中的元素个数
 HashTable.prototype.size = function () {
   return this.count
+}
+// 修改表的容量
+HashTable.prototype.resize = function (limit) {
+  // 保存旧数组的内容
+  var oldStorage = this.storage()
+  // 重置所有数据
+  this.storage = []
+  this.count = 0
+  this.limit = limit
+  // 遍历oldstorage
+  for (var i = 0; i < oldStorage.length; i++) {
+    var bucket = oldStorage[i]
+    if (bucket == null) {
+      continue
+    }
+    for (var j = 0; j < bucket.length; j++) {
+      var tuple = bucket[j]
+      // 重新插入一下
+      this.put(tuple[0], tuple[1])
+    }
+  }
+}
+HashTable.prototype.getPrime = function (num) {
+  while (!isPrime(num)) {
+    num++
+  }
+  return num
 }

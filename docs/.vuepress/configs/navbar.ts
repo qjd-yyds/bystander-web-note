@@ -2,8 +2,25 @@ import type { NavbarConfig } from '@vuepress/theme-default'
 
 export const navbar: NavbarConfig = [
   {
-    text: '指南',
-    link: '/guide/'
+    text: 'ES6',
+    children: [
+      {
+        text: '模板字符串',
+        link: '/ES6/template-string.md'
+      },
+      {
+        text: 'let',
+        link: '/ES6/let.md'
+      },
+      {
+        text: 'promise',
+        link: '/ES6/promise/readme.md'
+      },
+      {
+        text: 'class',
+        link: '/ES6/class/readme.md'
+      }
+    ]
   },
   {
     text: '前端三剑客',

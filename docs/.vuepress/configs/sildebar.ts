@@ -26,7 +26,7 @@ export const slidebar: SidebarConfig = {
         '/javascript/socpe.md',
         '/javascript/closure.md',
         '/javascript/object.md',
-        '/javascript/operator.md',
+        '/javascript/operator.md'
       ]
     },
     {
@@ -35,6 +35,17 @@ export const slidebar: SidebarConfig = {
         '/javascript/written/closure.md',
         '/javascript/written/object.md',
         '/javascript/written/more.md'
+      ]
+    }
+  ],
+  '/ES6': [
+    {
+      text: 'ES6语法',
+      children: [
+        '/ES6/template-string.md',
+        '/ES6/let.md',
+        '/ES6/promise/readme.md',
+        '/ES6/class/readme.md'
       ]
     }
   ],
@@ -50,7 +61,7 @@ export const slidebar: SidebarConfig = {
         '/algorithm/doubly-linked-list/readme.md',
         '/algorithm/set/readme.md',
         '/algorithm/dic/readme.md',
-        '/algorithm/hash-table/readme.md',
+        '/algorithm/hash-table/readme.md'
       ]
     }
   ]
