@@ -77,6 +77,14 @@ export const navbar: NavbarConfig = [
       {
         text: '哈希表',
         link: '/algorithm/hash-table/readme.md'
+      },
+      {
+        text: '树',
+        link: '/algorithm/tree/readme.md'
+      },
+      {
+        text: '二叉树',
+        link: '/algorithm/binary-tree/readme.md'
       }
     ]
   },

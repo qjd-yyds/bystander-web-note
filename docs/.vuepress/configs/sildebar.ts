@@ -5,7 +5,13 @@ export const slidebar: SidebarConfig = {
     {
       text: 'CSS笔记',
       collapsible: true,
-      children: ['/css/bfc', '/css/flex', '/css/phone', '/css/selector']
+      children: [
+        '/css/bfc',
+        '/css/flex',
+        '/css/phone',
+        '/css/selector',
+        '/css/mask/readme.md'
+      ]
     },
     {
       text: 'CSS面试题相关',
@@ -61,7 +67,9 @@ export const slidebar: SidebarConfig = {
         '/algorithm/doubly-linked-list/readme.md',
         '/algorithm/set/readme.md',
         '/algorithm/dic/readme.md',
-        '/algorithm/hash-table/readme.md'
+        '/algorithm/hash-table/readme.md',
+        '/algorithm/tree/readme.md',
+        '/algorithm/binary-tree/readme.md'
       ]
     }
   ]
