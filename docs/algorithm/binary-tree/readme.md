@@ -43,10 +43,38 @@
 - serach(key) 查找指定键，没找到返回 false 找到返回 true
 - inOrderTraverse 通过中序遍历所有节点
 - preOrderTraverse 先序
+  > 1.  访问根节点
+  > 2.  先遍历左子树
+  > 3.  先遍历右子树
 - postOrderTraverse 后序
+- 层序遍历
 - min 返回最小的值/键
 - max 返回最大值/键
 - remove 移除某个键
+  > 删除节点复杂
+  > 很大的内存浪费
 
 ## 二叉搜索树的封装(BinarySearchTree)
+
 @[code](./BinarySearchTree.js)
+
+## 平衡搜索树
+
+### 二叉树的优点
+
+- 查找效率高，二分法也是使用了该特性 =>O(logN)
+- 快速和删除，取决树的深度
+
+### 二叉树的缺陷
+
+:::tip 什么是平衡树
+如果分布均匀为平衡树
+:::
+:::danger
+如果形成了不平衡树，不如使用链表数据形式
+:::
+如果插入的数据是有序数据,深度会很大,下面的是一个非平衡树，
+
+传入 7 6 5 4 3
+
+![二叉树的缺陷](./BST-quexian.png)

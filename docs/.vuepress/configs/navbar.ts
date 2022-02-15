@@ -85,6 +85,10 @@ export const navbar: NavbarConfig = [
       {
         text: '二叉树',
         link: '/algorithm/binary-tree/readme.md'
+      },
+      {
+        text: '红黑树',
+        link: '/algorithm/red–black-tree/readme.md'
       }
     ]
   },
