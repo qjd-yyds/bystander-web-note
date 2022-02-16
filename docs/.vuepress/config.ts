@@ -1,7 +1,7 @@
 import { defineUserConfig } from 'vuepress'
 import { navbar, slidebar } from './configs'
 import type { DefaultThemeOptions } from 'vuepress'
-
+import vueJsx from '@vitejs/plugin-vue-jsx'
 export default defineUserConfig<DefaultThemeOptions>({
   base: '/web-site/',
   // 站点配置
@@ -44,5 +44,15 @@ export default defineUserConfig<DefaultThemeOptions>({
         }
       }
     ]
-  ]
+  ],
+  bundler: '@vuepress/bundler-vite',
+  bundlerConfig: {
+    viteOptions: {
+      plugins: [
+        vueJsx({
+          // options are passed on to @vue/babel-plugin-jsx
+        })
+      ]
+    }
+  }
 })
