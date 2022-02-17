@@ -1,4 +1,4 @@
-# 红黑树
+# 红黑树(RedBlackTree)
 
 ## 红黑树的规则
 
@@ -100,7 +100,7 @@
 4. 进入情况 4 判断
 
 ## 案例演示
-
+[演示地址](https://www.cs.usfca.edu/~galles/visualization/RedBlack.html)
 依次插入 10-9-8-7-6-5-4-3-2-1
 
 :::tip 提示
@@ -143,5 +143,3 @@
     > 对应情况 3  
     > 5 和 9 变成黑色，7 变成红  
     > 因为根节点不是黑色，把 7 变成黑色
-
-<RedBlackTree/>

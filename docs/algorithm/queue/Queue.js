@@ -30,3 +30,5 @@ Queue.prototype.toString = function () {
   }
   return result
 }
+
+export default Queue

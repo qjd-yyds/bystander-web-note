@@ -89,7 +89,15 @@ export const navbar: NavbarConfig = [
       {
         text: '红黑树',
         link: '/algorithm/red–black-tree/readme.md'
-      }
+      },
+      {
+        text: '图论',
+        link: '/algorithm/graph-theory/readme.md'
+      },
+      {
+        text: '排序',
+        link: '/algorithm/sort/readme.md'
+      },
     ]
   },
   {

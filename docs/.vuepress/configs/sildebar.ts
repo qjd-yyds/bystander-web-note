@@ -71,6 +71,8 @@ export const slidebar: SidebarConfig = {
         '/algorithm/tree/readme.md',
         '/algorithm/binary-tree/readme.md',
         '/algorithm/red–black-tree/readme.md',
+        '/algorithm/graph-theory/readme.md',
+        '/algorithm/sort/readme.md',
       ]
     }
   ]
