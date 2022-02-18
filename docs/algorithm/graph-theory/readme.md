@@ -1,6 +1,7 @@
 # 图论(Graph)
 
 ## 什么是图
+![图论](./graph-theory.png)
 
 :::tip 现实案例
 
