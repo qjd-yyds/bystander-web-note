@@ -1,5 +1,4 @@
 import type { NavbarConfig } from '@vuepress/theme-default'
-
 export const navbar: NavbarConfig = [
   {
     text: 'ES6',
@@ -97,7 +96,7 @@ export const navbar: NavbarConfig = [
       {
         text: '排序',
         link: '/algorithm/sort/readme.md'
-      },
+      }
     ]
   },
   {
