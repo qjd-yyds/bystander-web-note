@@ -32,7 +32,8 @@ export const slidebar: SidebarConfig = {
         '/javascript/socpe.md',
         '/javascript/closure.md',
         '/javascript/object.md',
-        '/javascript/operator.md'
+        '/javascript/operator.md',
+        '/javascript/提高代码的可靠性.md',
       ]
     },
     {
