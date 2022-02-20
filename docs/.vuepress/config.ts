@@ -1,6 +1,9 @@
 import { defineUserConfig } from 'vuepress'
 import { navbar, slidebar } from './configs'
 import type { DefaultThemeOptions } from 'vuepress'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 export default defineUserConfig<DefaultThemeOptions>({
   base: '/web-site/',
@@ -51,6 +54,12 @@ export default defineUserConfig<DefaultThemeOptions>({
       plugins: [
         vueJsx({
           // options are passed on to @vue/babel-plugin-jsx
+        }),
+        AutoImport({
+          resolvers: [ElementPlusResolver()]
+        }),
+        Components({
+          resolvers: [ElementPlusResolver()]
         })
       ]
     }
