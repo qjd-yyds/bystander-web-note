@@ -1,8 +1,8 @@
 import { defineComponent, ref } from 'vue'
-import deBounce from '../../utils/deBounce'
+import throttle from '../../utils/throttle'
 import { ElButton, ElSwitch } from 'element-plus'
 export default defineComponent({
-  name: 'deBounceHoc',
+  name: 'throttleHoc',
   setup() {
     function test() {
       num.value++
@@ -16,12 +16,12 @@ export default defineComponent({
           onChange={(val: any) => {
             state.value = val
           }}
-          activeText="防抖"
-          inactiveText="不防抖"
+          activeText="节流"
+          inactiveText="不节流"
         ></ElSwitch>
         <ElButton
           style="margin-left:10px"
-          onClick={state.value ? deBounce(test, 500) : test}
+          onClick={state.value ? throttle(test, 500) : test}
         >
           {num.value}
         </ElButton>

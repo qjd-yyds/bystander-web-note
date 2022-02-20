@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>undescore源码</title>
+  </head>
+  <body>
+    <script src="_.js"></script>
+    <script>
+      var arr = [1, 2, 3, 3, 3, 4, 5, 6, 7]
+      console.log(_.unique(arr))
+      console.log(_(arr).chain().unique(function (item) {
+        return item > 5 ? 5 : item
+      }).qjd().value());
+    </script>
+  </body>
+</html>
