@@ -6,8 +6,7 @@ import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 export default defineUserConfig<DefaultThemeOptions>({
-  // base: '/web-site/',
-  base: '/',
+  base: '/web-site/',
   // 站点配置
   lang: 'en-Us',
   title: 'bystander的修仙笔记',
