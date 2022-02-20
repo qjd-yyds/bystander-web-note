@@ -1,6 +1,7 @@
 import { defineComponent, ref } from 'vue'
 import deBounce from '../../utils/deBounce'
 import { ElButton, ElSwitch } from 'element-plus'
+import { deepCopy } from '../../utils'
 export default defineComponent({
   name: 'deBounceHoc',
   setup() {
@@ -9,6 +10,16 @@ export default defineComponent({
     }
     const state = ref(true)
     const num = ref(0)
+    const list = {
+      a: {
+        a: 1,
+        b: 2
+      },
+      c: Symbol('c'),
+      b: 12
+    }
+    const res = deepCopy(list);
+    console.log(res);
     return () => (
       <>
         <ElSwitch
