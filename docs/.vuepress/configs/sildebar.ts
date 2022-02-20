@@ -10,7 +10,8 @@ export const slidebar: SidebarConfig = {
         '/css/flex',
         '/css/phone',
         '/css/selector',
-        '/css/mask/readme.md'
+        '/css/mask/readme.md',
+        '/css/animal.md',
       ]
     },
     {
