@@ -36,6 +36,7 @@ export const slidebar: SidebarConfig = {
         '/javascript/operator.md',
         '/javascript/提高代码的可靠性.md',
         '/javascript/高阶函数.md',
+        '/javascript/原型.md',
       ]
     },
     {
@@ -54,7 +55,8 @@ export const slidebar: SidebarConfig = {
         '/ES6/template-string.md',
         '/ES6/let.md',
         '/ES6/promise/readme.md',
-        '/ES6/class/readme.md'
+        '/ES6/class/readme.md',
+        '/ES6/symbol.md',
       ]
     }
   ],

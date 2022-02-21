@@ -18,6 +18,10 @@ export const navbar: NavbarConfig = [
       {
         text: 'class',
         link: '/ES6/class/readme.md'
+      },
+      {
+        text: 'Symbol',
+        link: '/ES6/symbol.md'
       }
     ]
   },
