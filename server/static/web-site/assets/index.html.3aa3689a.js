@@ -1,0 +1,1 @@
+const e={key:"v-18e0a4de",path:"/css/mask/",title:"mask",lang:"en-Us",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1644838203e3,contributors:[{name:"qjd",email:"qjd1774@163.com",commits:1}]},filePathRelative:"css/mask/readme.md"};export{e as data};

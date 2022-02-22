@@ -1,0 +1,1 @@
+const e={key:"v-017c74d4",path:"/ES6/promise/",title:"promise",lang:"en-Us",frontmatter:{},excerpt:"",headers:[{level:2,title:"\u4E3A\u4EC0\u4E48\u4F1A\u6709",slug:"\u4E3A\u4EC0\u4E48\u4F1A\u6709",children:[]}],git:{updatedTime:1644762516e3,contributors:[{name:"qjd-yyds",email:"qjd1774@163.com",commits:1}]},filePathRelative:"ES6/promise/readme.md"};export{e as data};
