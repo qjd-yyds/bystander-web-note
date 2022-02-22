@@ -1,5 +1,51 @@
 # promise
 
-## 为什么会有
+## promiseA+ 规范
 
-多个异步任务顺序执行
+- 术语 promise 一个有 then 方法的对象或者函数，行为符合本规范
+- thenable 定义 then 方法的对象或者函数
+- value 任何 js 的合法值
+- exception throw 语句抛出的值
+- reason promise 被拒绝原因的值
+- 状态
+  - pending
+  - fulfulled
+  - rejected
+- then 参数
+  - 接受两个参数，分别是 onFulfulled，onRejected
+  - onFulfulled 在 promise 完成后被调用，onRejected 在 promise 被拒绝后调用
+  - 只能被调用一次
+- then 方法的调用可以被多次调用
+- then 方法返回值是一个 promise
+  - 以 `const promise2 = promise1.then(onFulfilled,onRejected)`为例
+  - onFulfilled 不是一个函数，且 promise1 的状态为 fulfilled，value 值同 promise1
+  - onRejected 不是一个函数，且 promise1 的状态为 reason 值同 promise1
+  - onFulfilled 或者 onRejected 返回 x，进入解析过程
+- 解析过程
+
+1. 如果 promise 和 x 指向相同值，抛错
+2. 如果 x 是一个 promise
+3. 如果 x 是一个对象或者函数
+4. 如果 x 不是一个对象也不是一个函数
+
+## 小试牛刀
+
+:::: code-group
+::: code-group-item 第 1 题
+
+```js
+const promise = Promise.resolve(1)
+  .then(2)
+  .then(Promise.resolve(3))
+  .then(console.log)
+```
+
+:::
+::: code-group-item 第 2 题
+
+```js
+const bar = 'bar'
+```
+
+:::
+::::

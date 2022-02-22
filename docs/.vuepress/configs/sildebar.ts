@@ -38,6 +38,9 @@ export const slidebar: SidebarConfig = {
         '/javascript/高阶函数.md',
         '/javascript/原型.md',
         '/javascript/面向对象.md',
+        '/javascript/异步.md',
+        '/javascript/eventLoop.md',
+        '/javascript/发布订阅.md',
       ]
     },
     {
