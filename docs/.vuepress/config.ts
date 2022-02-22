@@ -27,24 +27,20 @@ export default defineUserConfig<DefaultThemeOptions>({
     sidebar: slidebar
   },
   plugins: [
+    // [
+    //   '@snippetors/vuepress-plugin-code-copy',
+    //   {
+    //     align: 'bottom',
+    //     successText: '复制成功！'
+    //   }
+    // ],
     [
-      '@snippetors/vuepress-plugin-code-copy',
+      '@vuepress/plugin-search',
       {
-        align: 'bottom',
-        successText: '复制成功！'
-      }
-    ],
-    [
-      '@vuepress/docsearch',
-      {
-        apiKey: '<API_KEY>',
-        indexName: '<INDEX_NAME>',
-        placeholder: '搜索文档',
-        translations: {
-          button: {
-            buttonText: '搜索文档'
-          }
-        }
+        // 排除首页
+        isSearchable: (page: any) => page.path !== '/',
+        // 允许搜索 Frontmatter 中的 `tags`
+        getExtraFields: (page: any) => page.frontmatter.tags ?? []
       }
     ]
   ],
