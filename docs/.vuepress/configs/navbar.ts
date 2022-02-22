@@ -22,6 +22,10 @@ export const navbar: NavbarConfig = [
       {
         text: 'Symbol',
         link: '/ES6/symbol.md'
+      },
+      {
+        text: 'generator',
+        link: '/ES6/generator/readme.md'
       }
     ]
   },
