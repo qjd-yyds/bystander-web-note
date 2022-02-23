@@ -1,9 +1,9 @@
 import { defineUserConfig } from 'vuepress'
 import { navbar, slidebar } from './configs'
 import type { DefaultThemeOptions } from 'vuepress'
-import AutoImport from 'unplugin-auto-import/vite'
-import Components from 'unplugin-vue-components/vite'
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+// import AutoImport from 'unplugin-auto-import/vite'
+// import Components from 'unplugin-vue-components/vite'
+// import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 export default defineUserConfig<DefaultThemeOptions>({
   base: '/web-site/',
@@ -22,7 +22,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     toggleDarkMode: '夜间模式',
     repo: 'https://github.com/qjd-yyds/bystander-web-note',
     backToHome: '返回首页',
-    notFound: ['你不可以这样做！', '你已经走火入魔了？'],
+    notFound: ['你已经走火入魔了？'],
     navbar: navbar,
     sidebar: slidebar
   },
@@ -51,12 +51,12 @@ export default defineUserConfig<DefaultThemeOptions>({
         vueJsx({
           // options are passed on to @vue/babel-plugin-jsx
         }),
-        AutoImport({
-          resolvers: [ElementPlusResolver()]
-        }),
-        Components({
-          resolvers: [ElementPlusResolver()]
-        })
+        // AutoImport({
+        //   resolvers: [ElementPlusResolver()]
+        // }),
+        // Components({
+        //   resolvers: [ElementPlusResolver()]
+        // })
       ]
     }
   }

@@ -68,3 +68,8 @@ const bar = 'bar'
 
 :::
 ::::
+
+## promise 的实现
+
+测试使用 promises-aplus-tests，且通过测试
+@[code](./promise.js)

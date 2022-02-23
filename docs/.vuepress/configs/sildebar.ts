@@ -62,6 +62,8 @@ export const slidebar: SidebarConfig = {
         '/ES6/class/readme.md',
         '/ES6/symbol.md',
         '/ES6/generator/readme.md',
+        '/ES6/async-await/readme.md',
+        '/ES6/web-workers/readme.md',
       ]
     }
   ],

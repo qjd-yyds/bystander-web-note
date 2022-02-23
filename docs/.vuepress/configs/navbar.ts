@@ -26,6 +26,14 @@ export const navbar: NavbarConfig = [
       {
         text: 'generator',
         link: '/ES6/generator/readme.md'
+      },
+      {
+        text: 'async函数',
+        link: '/ES6/async-await/readme.md'
+      },
+      {
+        text: 'web workers',
+        link: '/ES6/web-workers/readme.md'
       }
     ]
   },
@@ -113,6 +121,15 @@ export const navbar: NavbarConfig = [
       {
         text: '响应式系统搭建',
         link: '/vue笔记/响应式系统搭建/readme.md'
+      }
+    ]
+  },
+  {
+    text: 'rxjs',
+    children: [
+      {
+        text: 'rxjs介绍',
+        link: '/rxjs'
       }
     ]
   },
