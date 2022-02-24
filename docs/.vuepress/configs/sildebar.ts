@@ -11,7 +11,7 @@ export const slidebar: SidebarConfig = {
         '/css/phone',
         '/css/selector',
         '/css/mask/readme.md',
-        '/css/animal.md',
+        '/css/animal.md'
       ]
     },
     {
@@ -40,7 +40,7 @@ export const slidebar: SidebarConfig = {
         '/javascript/面向对象.md',
         '/javascript/异步.md',
         '/javascript/eventLoop.md',
-        '/javascript/发布订阅.md',
+        '/javascript/发布订阅.md'
       ]
     },
     {
@@ -59,11 +59,13 @@ export const slidebar: SidebarConfig = {
         '/ES6/template-string.md',
         '/ES6/let.md',
         '/ES6/promise/readme.md',
+        '/ES6/promise/promise笔试题/readme.md',
         '/ES6/class/readme.md',
         '/ES6/symbol.md',
         '/ES6/generator/readme.md',
+        '/ES6/generator/generator笔试题/readme.md',
         '/ES6/async-await/readme.md',
-        '/ES6/web-workers/readme.md',
+        '/ES6/web-workers/readme.md'
       ]
     }
   ],
@@ -84,7 +86,7 @@ export const slidebar: SidebarConfig = {
         '/algorithm/binary-tree/readme.md',
         '/algorithm/red–black-tree/readme.md',
         '/algorithm/graph-theory/readme.md',
-        '/algorithm/sort/readme.md',
+        '/algorithm/sort/readme.md'
       ]
     }
   ]

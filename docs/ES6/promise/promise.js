@@ -179,6 +179,7 @@ class MyPromise {
     }
     // 3.promise1是pending状态
     if (promise1.status === STATUS.PENDING) {
+      // 如果不是函数，将上一个promise的值透传给下一个
       onfulfilled = isFunction(onfulfilled) ? onfulfilled : value => value
       onrejected = isFunction(onrejected)
         ? onrejected

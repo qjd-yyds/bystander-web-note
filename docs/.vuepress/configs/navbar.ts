@@ -16,6 +16,10 @@ export const navbar: NavbarConfig = [
         link: '/ES6/promise/readme.md'
       },
       {
+        text: 'promise笔试题',
+        link: '/ES6/promise/promise笔试题/readme.md'
+      },
+      {
         text: 'class',
         link: '/ES6/class/readme.md'
       },
@@ -26,6 +30,10 @@ export const navbar: NavbarConfig = [
       {
         text: 'generator',
         link: '/ES6/generator/readme.md'
+      },
+      {
+        text: 'generator笔试题',
+        link: '/ES6/generator/generator笔试题/readme.md'
       },
       {
         text: 'async函数',

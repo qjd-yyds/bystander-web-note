@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>顺序执行promise图片load</title>
+  </head>
+  <body>
+    <div id="pics">
+      <img
+        src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2095473240,3665022501&fm=26&gp=0.jpg"
+        data-src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2427280154,4101530500&fm=26&gp=0.jpg"
+      />
+      <img
+        src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2095473240,3665022501&fm=26&gp=0.jpg"
+        data-src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1366818873,4080537748&fm=26&gp=0.jpg"
+      />
+      <img
+        src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2095473240,3665022501&fm=26&gp=0.jpg"
+        data-src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1309741115,836649703&fm=26&gp=0.jpg"
+      />
+      <img
+        src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2095473240,3665022501&fm=26&gp=0.jpg"
+        data-src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/%E7%9F%AD%E5%8F%91%E7%9F%AD%E5%8F%91"
+      />
+    </div>
+    <script>
+      // 使用promise实现顺序加载图片，如果有图片加载失败，在图片位置显示加载失败的提示
+      function loadImage(imgElement) {
+        // 返回一个promise
+        return new Promise((resolve, reject) => {
+          imgElement.src = imgElement.dataset.src
+          imgElement.onload = function (e) {
+            resolve(e)
+          }
+          imgElement.onerror = function (e) {
+            reject(e)
+          }
+        })
+      }
+      function chainImage(imgElements, errorMsg) {
+        // 实现链式调用
+        let p = Promise.resolve()
+        imgElements.forEach(item => {
+          p = p
+            .then(res => {
+              return loadImage(item)
+            })
+            .catch(function (e) {
+              console.log(this)
+              errorMsg && errorMsg.call(this, e)
+            })
+        })
+      }
+      const imgs = document.querySelectorAll('img')
+      chainImage(imgs, function (e) {
+        const parent = e.target.parentElement
+        // 替换img为文本
+        parent.replaceChild(document.createTextNode('加载失败'), e.target)
+      })
+    </script>
+  </body>
+</html>

@@ -185,3 +185,7 @@ someAsyncOperation(() => {
 
 </CodeGroupItem>
 </CodeGroup>
+
+## setInterval 和 requestAnimationFrame
+
+requestAnimationFrame 和 setInterval 都可以实现动画，但是 setInterval 会在页面不可见的时候继续执行动画，requestAnimationFrame 会在不可见的时候不执行
