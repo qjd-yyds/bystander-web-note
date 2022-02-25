@@ -21,6 +21,7 @@
   "dependencies": {
     "@vuepress/plugin-search": "^2.0.0-beta.35",
     "element-plus": "^2.0.2",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "vuepress-theme-hope": "^2.0.0-alpha.34"
   }
 }
