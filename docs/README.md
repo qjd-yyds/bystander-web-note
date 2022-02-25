@@ -1,19 +1,59 @@
 ---
-home: true # 设置成主页
-heroImage: /images/logo.jpeg
-heroAlt: Logo image
-heroText: 修仙难！难于上青天！
-tagline: 筑基期、结丹期、元婴期、化神期、洞虚期、渡劫期
-actions:
-  - text: 快速修仙
-    link: /javascript/socpe
-    type: primary
-features:
-  - title: 手撕笔试题
-    details: 此乃js中的八股文，练成后可斗气化马
-  - title: 脚踢面试题
-    details: 此乃js中外家功法，练成后可脚踢面试题
-  - title: 怒怼面试官
-    details: 此乃js的内功心法，学成后面试官敢怒不敢言
-footer: 独家秘籍传内不传外
+home: true
+layout: Blog
+icon: home
+title: 主页
+# heroImage: /logo.png
+# heroText: bystander
+heroFullScreen: false
+tagline: 拒绝内卷
+projects:
+  - name: es6大杂烩
+    type: book
+    link: /es6/
+
+  - name: javascript内功
+    type: book
+    link: /javascript/
+
+  - name: html
+    type: book
+    link: /html/
+
+  - name: css
+    type: book
+    link: /css/
+
+  - name: 数据结构和算法
+    type: book
+    link: /algorithm/
+
+  - name: vue笔记
+    type: book
+    link: /vue/
+
+  - name: rxjs
+    type: book
+    link: /rxjs/
+
+  - name: linux
+    type: book
+    link: /linux/
+
+  # - name: in东师官网
+  #   type: project
+  #   desc: 提供各种功能的聚合入口，校历、讲座资讯
+  #   link: https://innenu.com/
+
+  # - name: mppage
+  #   type: project
+  #   desc: 轻量、高效的微信小程序框架(源码即将开放)
+  #   link: https://github.com/Mister-Hope/mppage
+
+  # - name: WNMP
+  #   type: project
+  #   desc: Windows 下一键安装集成式 WNMP 开发环境，高效安装，方便本地调试
+  #   link: https://github.com/Mister-Hope/install-WAMP-WNMP
+
+footer: '<a href="http://beian.miit.gov.cn/" rel="noopener noreferrer" target="_blank">备案号: 辽ICP备18007023号</a> | <a href="/about/site.html">关于网站</a>'
 ---

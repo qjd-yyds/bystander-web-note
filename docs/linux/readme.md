@@ -1,3 +1,11 @@
+---
+title: shell 简介
+# icon: note
+category: linux
+star: 9
+sticky: 9
+---
+
 # shell 简介
 
 ## shell 是什么

@@ -1,17 +1,16 @@
-import type { SidebarConfig } from '@vuepress/theme-default'
+import type { HopeThemeSidebarConfig } from 'vuepress-theme-hope'
 
-export const slidebar: SidebarConfig = {
-  '/css': [
+export const slidebar: HopeThemeSidebarConfig = {
+  '/css/': [
     {
       text: 'CSS笔记',
-      collapsible: true,
       children: [
-        '/css/bfc',
-        '/css/flex',
-        '/css/phone',
-        '/css/selector',
-        '/css/mask/readme.md',
-        '/css/animal.md'
+        'bfc',
+        'flex',
+        'phone',
+        'selector',
+        'mask/readme.md',
+        'animal.md'
       ]
     },
     {
@@ -19,28 +18,27 @@ export const slidebar: SidebarConfig = {
       children: ['/css/layout', '/css/middle']
     }
   ],
-  '/html': [
+  '/html/': [
     {
       text: 'HTML5相关笔记',
-      children: ['/html/ajax/readme.md', '/html/rich']
+      children: ['ajax/readme.md', 'rich']
     }
   ],
-  '/javascript': [
+  '/javascript/': [
     {
       text: 'JS理论相关',
-      collapsible: true,
       children: [
-        '/javascript/socpe.md',
-        '/javascript/closure.md',
-        '/javascript/object.md',
-        '/javascript/operator.md',
-        '/javascript/提高代码的可靠性.md',
-        '/javascript/高阶函数.md',
-        '/javascript/原型.md',
-        '/javascript/面向对象.md',
-        '/javascript/异步.md',
-        '/javascript/eventLoop.md',
-        '/javascript/发布订阅.md'
+        'socpe.md',
+        'closure.md',
+        'object.md',
+        'operator.md',
+        '提高代码的可靠性.md',
+        '高阶函数.md',
+        '原型.md',
+        '面向对象.md',
+        '异步.md',
+        'eventLoop.md',
+        '发布订阅.md'
       ]
     },
     {
@@ -52,41 +50,40 @@ export const slidebar: SidebarConfig = {
       ]
     }
   ],
-  '/ES6': [
+  '/es6/': [
     {
-      text: 'ES6语法',
+      text: 'ES6大杂烩',
       children: [
-        '/ES6/template-string.md',
-        '/ES6/let.md',
-        '/ES6/promise/readme.md',
-        '/ES6/promise/promise笔试题/readme.md',
-        '/ES6/class/readme.md',
-        '/ES6/symbol.md',
-        '/ES6/generator/readme.md',
-        '/ES6/generator/generator笔试题/readme.md',
-        '/ES6/async-await/readme.md',
-        '/ES6/web-workers/readme.md'
+        'template-string.md',
+        'let.md',
+        'promise/readme.md',
+        'promise/promise笔试题/readme.md',
+        'class/readme.md',
+        'symbol.md',
+        'generator/readme.md',
+        'generator/generator笔试题/readme.md',
+        'async-await/readme.md',
+        'web-workers/readme.md'
       ]
     }
   ],
-  '/algorithm': [
+  '/algorithm/': [
     {
       text: '数据结构和算法',
       children: [
-        '/algorithm/readme.md',
-        '/algorithm/stack/readme.md',
-        '/algorithm/queue/readme.md',
-        '/algorithm/priority-queue/readme.md',
-        '/algorithm/linked-list/readme.md',
-        '/algorithm/doubly-linked-list/readme.md',
-        '/algorithm/set/readme.md',
-        '/algorithm/dic/readme.md',
-        '/algorithm/hash-table/readme.md',
-        '/algorithm/tree/readme.md',
-        '/algorithm/binary-tree/readme.md',
-        '/algorithm/red–black-tree/readme.md',
-        '/algorithm/graph-theory/readme.md',
-        '/algorithm/sort/readme.md'
+        'stack/readme.md',
+        'queue/readme.md',
+        'priority-queue/readme.md',
+        'linked-list/readme.md',
+        'doubly-linked-list/readme.md',
+        'set/readme.md',
+        'dic/readme.md',
+        'hash-table/readme.md',
+        'tree/readme.md',
+        'binary-tree/readme.md',
+        'red–black-tree/readme.md',
+        'graph-theory/readme.md',
+        'sort/readme.md'
       ]
     }
   ]
