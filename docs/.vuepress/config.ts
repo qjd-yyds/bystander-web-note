@@ -8,6 +8,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import { defineHopeConfig } from 'vuepress-theme-hope'
 export default defineHopeConfig({
   base: '/web-site/',
+  dest: 'web-site',
   // 站点配置
   lang: 'en-Us',
   title: 'bystander的修仙笔记',
