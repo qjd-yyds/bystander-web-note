@@ -124,7 +124,15 @@ export const navbar: HopeThemeNavbarConfig = [
     children: [
       {
         text: '响应式系统搭建',
-        link: '/vue笔记/响应式系统搭建/readme.md'
+        link: '/vue/响应式系统搭建/readme.md'
+      },
+      {
+        text: 'computed和lazy',
+        link: '/vue/响应式系统搭建/computed.md'
+      },
+      {
+        text: 'watch',
+        link: '/vue/响应式系统搭建/watch.md'
       }
     ]
   },

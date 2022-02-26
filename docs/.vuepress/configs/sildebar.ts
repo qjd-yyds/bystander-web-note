@@ -92,5 +92,19 @@ export const slidebar: HopeThemeSidebarConfig = {
       text: '创建型',
       link: '创建型.md'
     }
+  ],
+  '/vue/': [
+    {
+      text: '响应式系统搭建',
+      link: '响应式系统搭建/readme.md'
+    },
+    {
+      text: 'computed和lazy',
+      link: '响应式系统搭建/computed.md'
+    },
+    {
+      text: 'watch',
+      link: '响应式系统搭建/watch.md'
+    }
   ]
 }

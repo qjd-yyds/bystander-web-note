@@ -43,7 +43,11 @@ export default defineHopeConfig({
       }
     },
     plugins: {
-      blog: true
+      blog: true,
+      mdEnhance: {
+        flowchart: true, // 开启流程图
+        mark: true //支持标记
+      }
     }
   },
   plugins: [
