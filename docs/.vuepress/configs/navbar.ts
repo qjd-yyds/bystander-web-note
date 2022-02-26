@@ -110,6 +110,16 @@ export const navbar: HopeThemeNavbarConfig = [
     ]
   },
   {
+    text: '设计模式',
+    prefix: '/设计模式/',
+    children: [
+      {
+        text: '创建型',
+        link: '创建型.md'
+      }
+    ]
+  },
+  {
     text: 'vue',
     children: [
       {

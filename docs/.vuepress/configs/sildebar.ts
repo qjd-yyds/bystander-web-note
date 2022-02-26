@@ -86,5 +86,11 @@ export const slidebar: HopeThemeSidebarConfig = {
         'sort/readme.md'
       ]
     }
+  ],
+  '/设计模式/': [
+    {
+      text: '创建型',
+      link: '创建型.md'
+    }
   ]
 }

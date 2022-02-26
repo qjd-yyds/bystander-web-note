@@ -28,6 +28,10 @@ projects:
     type: book
     link: /algorithm/
 
+  - name: 设计模式
+    type: book
+    link: /设计模式/
+
   - name: vue笔记
     type: book
     link: /vue/
@@ -55,5 +59,5 @@ projects:
   #   desc: Windows 下一键安装集成式 WNMP 开发环境，高效安装，方便本地调试
   #   link: https://github.com/Mister-Hope/install-WAMP-WNMP
 
-footer: '<a href="http://beian.miit.gov.cn/" rel="noopener noreferrer" target="_blank">备案号: 辽ICP备18007023号</a> | <a href="/about/site.html">关于网站</a>'
+footer: '修仙之路如逆水行舟，不进则退'
 ---
