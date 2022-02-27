@@ -10,39 +10,43 @@ tagline: 拒绝内卷
 projects:
   - name: es6大杂烩
     type: book
-    link: /es6/
+    link: /category/es6/
 
   - name: javascript内功
     type: book
-    link: /javascript/
+    link: /category/javascript/
 
   - name: html
     type: book
-    link: /html/
+    link: /category/html/
 
   - name: css
     type: book
-    link: /css/
+    link: /category/css/
 
   - name: 数据结构和算法
     type: book
-    link: /algorithm/
+    link: /category/algorithm/
 
   - name: 设计模式
     type: book
-    link: /设计模式/
+    link: /category/设计模式/
 
   - name: vue笔记
     type: book
-    link: /vue/
+    link: /category/vue/
 
   - name: rxjs
     type: book
-    link: /rxjs/
+    link: /category/rxjs/
 
   - name: linux
     type: book
-    link: /linux/
+    link: /category/linux/
+
+  - name: 计算机网络
+    type: book
+    link: /category/计算机网络/
 
   # - name: in东师官网
   #   type: project
