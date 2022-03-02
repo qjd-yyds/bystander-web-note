@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="file" id="file" />
+    <input type="submit" value="提交" onclick="submit()" />
+    <script>
+      function submit() {
+        const formData = new FormData();
+        formData.append("name",upload.name)
+        formData.append("file",upload.data)
+        fetch('/api/submitblob', {
+          method: 'post',
+          body: formData,
+        })
+      }
+      // cpu压力小 base64需要转成二进制
+      // 速度快
+      const upload = {}
+      document.getElementById('file').addEventListener('change', function (e) {
+        const files = e.target.files
+        for (let file of files) {
+          upload.data = file
+          upload.name = file.name
+        }
+        console.log(upload)
+      })
+    </script>
+  </body>
+</html>
