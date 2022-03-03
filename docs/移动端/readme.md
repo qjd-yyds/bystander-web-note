@@ -23,6 +23,6 @@ category: 移动端
 - CDN
 - 预加载 webview 打开app的时候，打开一个webview
 - server push HTTP2.0开启 html请求的时候 js和css一起返回
-- 离线包
+- 离线包 
 - 压缩 图片压缩 js压缩
 - service worker
