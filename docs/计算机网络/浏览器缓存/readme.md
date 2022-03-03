@@ -69,3 +69,28 @@ console.log(mfib(99))
 | s-maxage | 秒(代理缓存) |
 
 ## 强制缓存
+
+强制使用缓存，不去服务器对比
+
+```
+cache-Control:max-age=600
+Expires:<最后期限>
+```
+
+## 协商缓存
+
+每次请求和服务端对比，缓存生效不传回 body
+
+### 方案一
+
+两者对比，没有超过时间就拿缓存的
+
+- 服务端返回 Last-Modified:<昨天>
+- 请求 If-Modified-Since:<昨天>
+
+### 方案二
+
+两者对比，相同就缓存
+
+- 服务端返回 E-Tag:1234567
+- 请求 If-None-Match:1234567

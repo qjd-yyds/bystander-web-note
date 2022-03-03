@@ -5,6 +5,8 @@ const fs = require('fs')
 module.exports = function (router) {
   // 文件提交
   router.get('/submit', (req, res) => {
+    // 测试一下cookie
+    res.setHeader('Set-Cookie', 'abc=123')
     // __dirname当前目录
     res.sendFile(path.resolve(__dirname, '../static/submit.html'))
   })

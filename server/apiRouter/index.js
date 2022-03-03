@@ -5,13 +5,6 @@ const httpstatus = require('./http')
 const router = express.Router()
 fileApi(router)
 httpstatus(router)
-router.get('/ajax/user', function (req, res, next) {
-  res.json({
-    name: '张三',
-    age: 12,
-    id: '001'
-  })
-})
 // fetch('/api/product', {
 //   method: 'POST',
 //   body: JSON.stringify({
@@ -21,5 +14,13 @@ router.get('/ajax/user', function (req, res, next) {
 //     'Content-Type': 'application/json'
 //   }
 // })
+
+router.get('/ajax/user', function (req, res, next) {
+  res.json({
+    name: '张三',
+    age: 12,
+    id: '001'
+  })
+})
 
 module.exports = router

@@ -10,6 +10,9 @@ category: html
 
 ## BASE64
 
+:::tip
+使用四个可见字符，去编码 3 个字节,好处是可见
+:::
 用 64 个打印字符（A-Za-z0-9）来编码二进制。还有两个字符（加号 和 逗号 等号）空格变成 %2f
 
 ## 语义化标签
@@ -91,7 +94,7 @@ type:url:<input type="url" />
 可以共享，开启一个新的进程
 
 - 数据 mock
-- 离线应用和缓存 fetch和cacheStorage
+- 离线应用和缓存 fetch 和 cacheStorage
 
 ## 地理位置
 
