@@ -1,0 +1,1 @@
+const e={key:"v-3d184cee",path:"/category/js/",title:"",lang:"zh-CN",frontmatter:{blog:{type:"category",name:"Js",key:"category"},layout:"Blog"},excerpt:"",headers:[],git:{},readingTime:{minutes:0,words:0},filePathRelative:null};export{e as data};

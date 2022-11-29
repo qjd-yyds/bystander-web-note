@@ -1,0 +1,1 @@
+const e={key:"v-74458d05",path:"/css/",title:"css",lang:"zh-CN",frontmatter:{title:"css",category:["Css"]},excerpt:"",headers:[],git:{createdTime:164580539e4,updatedTime:1645844679e3,contributors:[{name:"qjd-yyds",email:"qjd1774@163.com",commits:2}]},readingTime:{minutes:.02,words:5},filePathRelative:"css/readme.md"};export{e as data};

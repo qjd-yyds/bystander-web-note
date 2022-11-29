@@ -1,0 +1,1 @@
+import{_ as o,r,o as t,a as n,f as s,F as c,b as e,d as _}from"./app.1f7b43e3.js";const d={},l=e("h1",{id:"\u8FC7\u6E21",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#\u8FC7\u6E21","aria-hidden":"true"},"#"),_(" \u8FC7\u6E21")],-1);function f(i,m){const a=r("box");return t(),n(c,null,[l,s(a)],64)}var p=o(d,[["render",f]]);export{p as default};

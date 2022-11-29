@@ -1,0 +1,1 @@
+const e={key:"v-72386375",path:"/css/selector.html",title:"css \u7684\u9009\u62E9\u5668",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{createdTime:1644661913e3,updatedTime:1644661913e3,contributors:[{name:"qjd-yyds",email:"qjd1774@163.com",commits:1}]},readingTime:{minutes:.23,words:68},filePathRelative:"css/selector.md"};export{e as data};

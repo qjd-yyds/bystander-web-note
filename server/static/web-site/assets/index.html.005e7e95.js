@@ -1,0 +1,1 @@
+const e={key:"v-1aa1ac17",path:"/es6/class/",title:"class&\u7EE7\u627F",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"es5",slug:"es5",children:[]},{level:2,title:"es6",slug:"es6",children:[]}],git:{createdTime:null,updatedTime:null,contributors:[]},readingTime:{minutes:.14,words:41},filePathRelative:"es6/class/readme.md"};export{e as data};

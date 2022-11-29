@@ -1,0 +1,1 @@
+const e={key:"v-74466e60",path:"/es6/",title:"es6 \u5927\u6742\u70E9",lang:"zh-CN",frontmatter:{title:"es6 \u5927\u6742\u70E9",category:["Es6"]},excerpt:"",headers:[],git:{createdTime:null,updatedTime:null,contributors:[]},readingTime:{minutes:.03,words:10},filePathRelative:"es6/README.md"};export{e as data};
